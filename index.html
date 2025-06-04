@@ -1,65 +1,87 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="ShoreSquad - Join your community and keep beaches clean." />
-    <title>ShoreSquad | Beach Cleanup Community</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    name="description"
+    content="ShoreSquad – Bring your team together for community beach cleanups."
+  />
+  <title>ShoreSquad – Beach Cleanup Community</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
 </head>
 <body>
-    <header class="main-header">
-        <nav class="nav-container" role="navigation" aria-label="Main Navigation">
-            <div class="logo">ShoreSquad</div>
-            <ul class="nav-links">
-                <li><a href="#map">Cleanups</a></li>
-                <li><a href="#weather">Weather</a></li>
-                <li><a href="#join">Join Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="main-header">
+    <nav class="nav-container">
+      <div class="logo">ShoreSquad</div>
+      <ul class="nav-links">
+        <li><a href="#map-section">Find Cleanups</a></li>
+        <li><a href="#weather-section">Weather</a></li>
+        <li><a href="#next-cleanup">Join Squad</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <h1>Join the Movement to Clean Our Beaches</h1>
-            <p>Be part of a community dedicated to preserving our coastlines</p>
-            <button class="cta-button" onclick="document.getElementById('map').scrollIntoView({ behavior: 'smooth' })">Find Nearby Cleanups</button>
-        </section>
+  <main>
+    <section class="hero">
+      <h1>Rally Your Crew for Beach Cleanup</h1>
+      <p>Join the movement to keep our shores clean and vibrant.</p>
+      <button class="cta-button">Find Nearest Cleanup</button>
+    </section>
 
-        <section id="map" class="map-section">
-            <h2>Cleanup Locations</h2>
-            <div id="cleanup-map" role="region" aria-label="Map showing beach cleanup locations"></div>
-        </section>
+    <section id="map-section" class="map-section">
+      <h2>Beach Cleanup Locations</h2>
+      <div id="cleanup-map"></div>
+    </section>
 
-        <section id="weather" class="weather-section">
-            <h2>Current Beach Weather</h2>
-            <div id="weather-widget" role="region" aria-label="Weather updates"></div>
-        </section>
+    <section id="weather-section" class="weather-section">
+      <h2>Beach Weather (Pasir Ris)</h2>
+      <div id="weather-widget">
+        <p>Weather information loading…</p>
+      </div>
+    </section>
 
-        <section id="next-cleanup" class="map-section">
-            <h2>Upcoming Cleanup: Pasir Ris</h2>
-            <div class="google-map">
-                <iframe
-                    width="100%"
-                    height="450"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&q=1.381497,103.955574&zoom=15&center=1.381497,103.955574&markers=color:red%7Clabel:C%7C1.381497,103.955574">
-                </iframe>
-            </div>
-        </section>
-    </main>
+    <section id="next-cleanup" class="map-section">
+      <h2>Next Cleanup Location – Pasir Ris</h2>
+      <div class="google-map">
+        <iframe
+          width="100%"
+          height="450"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
+          &q=1.381497,103.955574
+          &zoom=15
+          &center=1.381497,103.955574
+          &markers=color:red%7Clabel:C%7C1.381497,103.955574">
+        </iframe>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 ShoreSquad — United for Cleaner Beaches.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 ShoreSquad. Making waves in beach conservation.</p>
+  </footer>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="js/app.js"></script>
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
