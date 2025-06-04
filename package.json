@@ -1,0 +1,22 @@
+{
+  "name": "shoresquad",
+  "version": "1.0.0",
+  "description": "Bring your team together, check the weather, and plan your next beach cleanup with this interactive map app.",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "live-server --port=5500",
+    "test": "echo \"Error: no test configured\" && exit 1"
+  },
+  "keywords": [
+    "beach-cleanup",
+    "environment",
+    "community-action",
+    "weather-updates",
+    "interactive-maps"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
